@@ -1,0 +1,71 @@
+<div class="sidebar">
+
+    <!-- Logo -->
+
+    <div class="sidebar-logo">
+
+        <i class="bi bi-cake2-fill"></i>
+
+        <span>Cake Shop</span>
+
+    </div>
+
+    <!-- Navigation -->
+
+    <ul class="sidebar-menu">
+
+        <li>
+            <a href="{% url 'admin_dashboard' %}">
+                <i class="bi bi-speedometer2"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li class="menu-title">
+            Cake Management
+        </li>
+
+        <li>
+            <a href="{% url 'cake_add' %}">
+                <i class="bi bi-plus-circle"></i>
+                <span>Add Cake</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="{% url 'cake_list' %}">
+                <i class="bi bi-card-list"></i>
+                <span>Cake List</span>
+            </a>
+        </li>
+
+        <li class="menu-title">
+            Store
+        </li>
+
+        <li>
+            <a href="{% url 'category_list' %}">
+                <i class="bi bi-tags"></i>
+                <span>Categories</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="{% url 'order_list' %}">
+                <i class="bi bi-bag-check"></i>
+                <span>Orders</span>
+            </a>
+        </li>
+
+        
+
+     <li>
+    <a href="/login/" onclick="logout(); return false;">
+        <i class="bi bi-box-arrow-right"></i>
+        <span>Logout</span>
+    </a>
+</li>
+    </ul>
+
+</div>
+

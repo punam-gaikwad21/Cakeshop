@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Cake Details{% endblock %}
+
+{% block content %}
+
+<section class="cake-details py-5">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Cake Image -->
+
+            <div class="col-lg-6">
+
+                <div class="cake-image-box">
+
+                    <img
+                        id="cakeImage"
+                        class="img-fluid rounded shadow"
+                        src=""
+                        alt="Cake">
+
+                </div>
+
+            </div>
+
+            <!-- Cake Details -->
+
+            <div class="col-lg-6">
+
+                <h2 id="cakeName"></h2>
+
+                <h3 class="text-main mb-3">
+                    ₹<span id="cakePrice"></span>
+                </h3>
+
+                <p>
+                    <strong>Category :</strong>
+                    <span id="cakeCategory"></span>
+                </p>
+
+                <p>
+                    <strong>Weight :</strong>
+                    <span id="cakeWeight"></span>
+                </p>
+
+                <p id="cakeDescription"></p>
+
+<div class="mt-4">
+
+    <button
+        class="btn btn-main"
+        onclick="addToCart()">
+
+        <i class="bi bi-cart-plus"></i>
+
+        Add To Cart
+
+    </button>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script src="{% static 'js/cake_details.js' %}"></script>
+
+{% endblock %}

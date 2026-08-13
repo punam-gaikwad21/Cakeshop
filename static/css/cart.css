@@ -1,0 +1,115 @@
+/* ==========================
+   CART PAGE
+========================== */
+
+.cart-section{
+    background:#FFF8F0;
+    min-height:80vh;
+    padding:60px 0;
+}
+
+.table{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.table thead{
+    background:#3E2723;
+    color:#fff;
+}
+
+.table th{
+    text-align:center;
+    vertical-align:middle;
+    font-weight:600;
+}
+
+.table td{
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.quantity-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.quantity-box button{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    padding:0;
+}
+
+.summary-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    position:sticky;
+    top:100px;
+}
+
+.summary-card h4{
+    color:#3E2723;
+    font-weight:700;
+}
+
+#cartTotal{
+    color:#D2691E;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.btn-warning{
+    background:#D2691E;
+    border:none;
+    color:#fff;
+    font-weight:600;
+    border-radius:10px;
+}
+
+.btn-warning:hover{
+    background:#b85a16;
+    color:#fff;
+}
+
+.btn-danger{
+    border-radius:10px;
+}
+
+.section-title{
+    font-size:42px;
+    font-weight:700;
+    color:#3E2723;
+    font-family:'Playfair Display', serif;
+}
+
+.section-subtitle{
+    color:#666;
+}
+
+@media(max-width:991px){
+
+    .summary-card{
+        margin-top:30px;
+        position:static;
+    }
+
+    .table img{
+        width:70px;
+        height:70px;
+    }
+
+}

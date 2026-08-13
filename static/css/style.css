@@ -1,0 +1,190 @@
+@import url("offer.css");
+@import url("index.css");
+@import url("about.css");
+@import url("auth.css");
+@import url("shop.css");
+@import url("cart.css");
+@import url("cake_details.css");
+@import url("checkout.css");
+@import url("my_orders.css");
+@import url("why.css");
+@import url("testimonial.css");
+
+
+/* Google Fonts */
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#fff8f0;
+}
+
+/* Logo */
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#D2691E !important;
+}
+
+/* Navbar */
+.navbar{
+    padding:15px 0;
+}
+
+
+
+.nav-link{
+    font-weight:500;
+    color:#444 !important;
+    margin:0 10px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#D2691E !important;
+}
+
+.nav-link.active{
+    color:#D2691E !important;
+}
+
+/* Custom Button */
+
+.btn-main{
+
+    background:#D2691E;
+    color:white;
+    border-radius:30px;
+    padding:8px 20px;
+}
+
+.btn-main:hover{
+
+    background:#b85a18;
+    color:white;
+}
+
+.btn-outline-dark{
+
+    border-radius:30px;
+}
+
+/* ==========================
+      FEATURED CAKES
+========================== */
+
+.section-title{
+
+    font-size:42px;
+    font-family:'Playfair Display', serif;
+    color:#3E2723;
+}
+
+.section-subtitle{
+
+    color:#777;
+}
+
+.cake-card{
+
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.cake-card:hover{
+
+    transform:translateY(-10px);
+}
+
+.cake-image{
+
+    position:relative;
+    overflow:hidden;
+}
+
+.cake-image img{
+
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.cake-card:hover img{
+
+    transform:scale(1.08);
+}
+
+.offer{
+
+    position:absolute;
+    top:15px;
+    left:15px;
+}
+
+.cake-content{
+
+    padding:25px;
+}
+
+.rating{
+
+    color:orange;
+    font-size:18px;
+    margin:10px 0;
+}
+
+.price{
+
+    color:#D2691E;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+.footer{
+
+background:#3E2723;
+
+color:white;
+
+padding:70px 0 20px;
+
+}
+
+.footer a{
+
+color:#ddd;
+
+text-decoration:none;
+
+}
+
+.footer ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.footer li{
+
+margin-bottom:10px;
+
+}
+
+.footer i{
+
+font-size:22px;
+
+margin-right:15px;
+
+cursor:pointer;
+
+}

@@ -1,0 +1,119 @@
+/* Hero */
+
+.why-hero{
+    background:#FFF8F0;
+    padding:90px 0;
+}
+
+.why-hero h1{
+    font-size:55px;
+    color:#3E2723;
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+}
+
+.why-hero p{
+    color:#666;
+    font-size:18px;
+}
+
+/* Cards */
+
+.why-section{
+    background:#fff;
+}
+
+.why-card{
+    background:#FFF8F0;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+    height:100%;
+}
+
+.why-card:hover{
+    background:#D2691E;
+    color:#fff;
+    transform:translateY(-10px);
+}
+
+.why-card i{
+    font-size:55px;
+    color:#D2691E;
+    margin-bottom:20px;
+}
+
+.why-card:hover i{
+    color:#fff;
+}
+
+.why-card h4{
+    color:#3E2723;
+    margin-bottom:15px;
+}
+
+.why-card:hover h4,
+.why-card:hover p{
+    color:#fff;
+}
+
+/* About */
+
+.about-why{
+    background:#FFF8F0;
+}
+
+.about-why h2{
+    color:#3E2723;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about-why p{
+    color:#666;
+    line-height:1.8;
+}
+
+.about-why ul{
+    list-style:none;
+    padding:0;
+}
+
+.about-why li{
+    margin-bottom:12px;
+    color:#3E2723;
+    font-weight:500;
+}
+
+.btn-main{
+    background:#D2691E;
+    color:#fff;
+    border:none;
+    padding:12px 30px;
+    border-radius:30px;
+}
+
+.btn-main:hover{
+    background:#3E2723;
+    color:#fff;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.why-hero h1{
+    font-size:38px;
+}
+
+.about-why{
+    text-align:center;
+}
+
+.about-why img{
+    margin-bottom:30px;
+}
+
+}

@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Checkout{% endblock %}
+
+{% block content %}
+
+<section class="checkout-section py-5">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Customer Details -->
+
+            <div class="col-lg-8">
+
+                <div class="checkout-card">
+
+                    <h3 class="mb-4">
+                        Delivery Details
+                    </h3>
+
+                    <form id="checkoutForm">
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>Full Name</label>
+
+                                <input
+                                    type="text"
+                                    id="full_name"
+                                    class="form-control">
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>Mobile Number</label>
+
+                                <input
+                                    type="text"
+                                    id="mobile"
+                                    class="form-control">
+
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label>Delivery Address</label>
+
+                            <textarea
+                                id="address"
+                                class="form-control"
+                                rows="4"></textarea>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label>Payment Method</label>
+
+                            <select
+                                id="payment_method"
+                                class="form-select">
+
+                                <option value="COD">
+                                    Cash On Delivery
+                                </option>
+
+                                <option value="ONLINE">
+                                    Online Payment
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- Order Summary -->
+
+            <div class="col-lg-4">
+
+                <div class="summary-card">
+
+                    <h4>Order Summary</h4>
+
+                    <hr>
+
+                    <div id="checkoutItems">
+
+                    </div>
+
+                    <hr>
+
+                    <h5>
+
+                        Total :
+
+                        ₹<span id="checkoutTotal">
+                            0
+                        </span>
+
+                    </h5>
+
+                    <button
+                        class="btn btn-main w-100 mt-4"
+                        onclick="placeOrder()">
+
+                        Place Order
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="{% static 'js/checkout.js' %}"></script>
+
+{% endblock %}

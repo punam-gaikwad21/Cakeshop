@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Why Choose Us | Cake Shop{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="why-hero py-5">
+    <div class="container text-center">
+        <h1>Why Choose Us</h1>
+        <p>Fresh Cakes, Premium Quality & Excellent Service</p>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-section py-5">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-card">
+                    <i class="bi bi-cake2-fill"></i>
+                    <h4>Fresh Cakes</h4>
+                    <p>Freshly baked every day using premium ingredients.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-card">
+                    <i class="bi bi-truck"></i>
+                    <h4>Fast Delivery</h4>
+                    <p>Quick and safe delivery at your doorstep.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-card">
+                    <i class="bi bi-award-fill"></i>
+                    <h4>Best Quality</h4>
+                    <p>Made with premium ingredients and rich taste.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-card">
+                    <i class="bi bi-heart-fill"></i>
+                    <h4>Happy Customers</h4>
+                    <p>Thousands of customers trust our delicious cakes.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-why py-5">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <img src="{% static 'images/chocolet1.jpg' %}" class="img-fluid rounded-4">
+            </div>
+
+            <div class="col-lg-6">
+                <h2>We Bake Happiness</h2>
+
+                <p>
+                    Our cakes are handcrafted with love, premium ingredients,
+                    and unique flavors. Every celebration becomes memorable
+                    with our delicious cakes.
+                </p>
+
+                <ul>
+                    <li>✔ 100% Fresh Ingredients</li>
+                    <li>✔ Same Day Delivery</li>
+                    <li>✔ Affordable Prices</li>
+                    <li>✔ Custom Cake Designs</li>
+                </ul>
+
+                <a href="#" class="btn btn-main mt-3">
+                    Order Now
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

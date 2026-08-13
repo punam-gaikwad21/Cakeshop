@@ -1,0 +1,138 @@
+/* ==========================
+        SHOP BANNER
+========================== */
+
+.shop-banner{
+    background:#FFF8F0;
+    padding:80px 0;
+}
+
+.shop-title{
+    font-size:52px;
+    font-family:'Playfair Display', serif;
+    font-weight:700;
+    color:#3E2723;
+}
+
+.shop-subtitle{
+    color:#666;
+    font-size:18px;
+    margin-top:15px;
+}
+
+/* ==========================
+        SEARCH & FILTER
+========================== */
+
+.shop-section{
+    background:#ffffff;
+}
+
+#searchCake,
+#categoryFilter{
+    height:55px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    box-shadow:none;
+}
+
+#searchCake:focus,
+#categoryFilter:focus{
+    border-color:#D2691E;
+    box-shadow:0 0 0 .15rem rgba(210,105,30,.2);
+}
+
+/* ==========================
+        PRODUCT CARD
+========================== */
+
+.shop-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.shop-card:hover{
+    transform:translateY(-8px);
+}
+
+.shop-image{
+    overflow:hidden;
+}
+
+.shop-image img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.shop-card:hover .shop-image img{
+    transform:scale(1.08);
+}
+
+.shop-body{
+    padding:20px;
+    text-align:center;
+}
+
+.shop-body h4{
+    color:#3E2723;
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+.shop-price{
+    font-size:24px;
+    font-weight:700;
+    color:#D2691E;
+    margin-bottom:18px;
+}
+
+.btn-view{
+    width:100%;
+    border-radius:10px;
+}
+
+/* ==========================
+        PAGINATION
+========================== */
+
+.pagination .page-link{
+    color:#D2691E;
+    border-radius:8px;
+    margin:0 4px;
+}
+
+.pagination .page-item.active .page-link{
+    background:#D2691E;
+    border-color:#D2691E;
+    color:#fff;
+}
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+@media(max-width:991px){
+
+    .shop-title{
+        font-size:40px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .shop-title{
+        font-size:32px;
+    }
+
+    .shop-image img{
+        height:220px;
+    }
+
+}

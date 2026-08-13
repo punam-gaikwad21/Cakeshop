@@ -1,0 +1,273 @@
+
+{% extends "admin_dashboard/admin_base.html" %}
+{% load static %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+
+<!-- Page Heading -->
+
+<div class="page-header mb-4">
+
+    <h2>
+        Welcome,
+        {{ request.user.first_name|default:request.user.username }}
+        👋
+    </h2>
+
+    <p class="text-muted">
+        Manage your Cake Shop from one place.
+    </p>
+
+</div>
+
+
+<!-- Dashboard Cards -->
+
+<div class="row g-4">
+
+    <!-- Total Cakes -->
+
+    <div class="col-lg-3 col-md-6">
+
+        <div class="dashboard-card">
+
+            <div>
+
+                <h6>Total Cakes</h6>
+
+                <h2 id="totalCakes">0</h2>
+
+            </div>
+
+            <i class="bi bi-cake2-fill"></i>
+
+        </div>
+
+    </div>
+
+
+    <!-- Total Orders -->
+
+    <div class="col-lg-3 col-md-6">
+
+        <div class="dashboard-card">
+
+            <div>
+
+                <h6>Total Orders</h6>
+
+                <h2 id="totalOrders">0</h2>
+
+            </div>
+
+            <i class="bi bi-bag-check-fill"></i>
+
+        </div>
+
+    </div>
+
+
+    <!-- Customers -->
+
+    <div class="col-lg-3 col-md-6">
+
+        <div class="dashboard-card">
+
+            <div>
+
+                <h6>Customers</h6>
+
+                <h2 id="totalUsers">0</h2>
+
+            </div>
+
+            <i class="bi bi-people-fill"></i>
+
+        </div>
+
+    </div>
+
+
+    <!-- Revenue -->
+
+    <div class="col-lg-3 col-md-6">
+
+        <div class="dashboard-card">
+
+            <div>
+
+                <h6>Revenue</h6>
+
+                <h2 id="totalRevenue">₹0</h2>
+
+            </div>
+
+            <i class="bi bi-currency-rupee"></i>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Cart -->
+
+<div class="card shadow-sm border-0 mt-4">
+
+    <div class="card-body d-flex justify-content-between align-items-center">
+
+        <div>
+
+            <h6 class="mb-1">Cart Items</h6>
+
+            <p class="text-muted mb-0">
+                Total items currently in customer carts
+            </p>
+
+        </div>
+
+        <div>
+
+            <span
+                id="totalCartItems"
+                class="badge bg-primary fs-5"
+            >
+                0
+            </span>
+
+            <i class="bi bi-cart-fill fs-3 ms-2"></i>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Recent Cakes -->
+
+<div class="card shadow-sm border-0 mt-5">
+
+    <div class="card-header bg-white">
+
+        <h5 class="mb-0">
+            Recent Cakes
+        </h5>
+
+    </div>
+
+    <div class="card-body">
+
+        <div class="table-responsive">
+
+            <table class="table align-middle">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Image</th>
+
+                        <th>Name</th>
+
+                        <th>Category</th>
+
+                        <th>Price</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="recentCakeTable">
+
+                    <tr>
+
+                        <td
+                            colspan="5"
+                            class="text-center"
+                        >
+                            Loading...
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Recent Orders -->
+
+<div class="card shadow-sm border-0 mt-4">
+
+    <div class="card-header bg-white">
+
+        <h5 class="mb-0">
+            Recent Orders
+        </h5>
+
+    </div>
+
+    <div class="card-body">
+
+        <div class="table-responsive">
+
+            <table class="table align-middle">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Order ID</th>
+
+                        <th>Customer</th>
+
+                        <th>Total</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="recentOrderTable">
+
+                    <tr>
+
+                        <td
+                            colspan="4"
+                            class="text-center"
+                        >
+                            Loading...
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="{% static 'js/dashboard.js' %}"></script>
+
+
+{% endblock %}
+
+

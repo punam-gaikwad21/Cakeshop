@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact Us | Cake Shop{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+<section class="py-5 hero">
+    <div class="container text-center">
+        <h1 class="hero-title">Contact Us</h1>
+        <p class="hero-text">
+            We'd Love To Hear From You
+        </p>
+    </div>
+</section>
+
+<!-- Contact Info -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+                <div class="contact-info">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <h4>Address</h4>
+                    <p>
+                        Cake Shop<br>
+                        Kolhapur, Maharashtra
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="contact-info">
+                    <i class="bi bi-telephone-fill"></i>
+                    <h4>Phone</h4>
+                    <p>
+                        +91 9876543210
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="contact-info">
+                    <i class="bi bi-envelope-fill"></i>
+                    <h4>Email</h4>
+                    <p>
+                        info@cakeshop.com
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="pb-5">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-8">
+
+                <div class="contact-form">
+
+                    <h3 class="mb-4">Send Message</h3>
+
+                    <form>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+                                <input type="text"
+                                    class="form-control"
+                                    placeholder="Your Name">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="email"
+                                    class="form-control"
+                                    placeholder="Email">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="text"
+                                    class="form-control"
+                                    placeholder="Phone">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="text"
+                                    class="form-control"
+                                    placeholder="Subject">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <textarea class="form-control"
+                                    rows="6"
+                                    placeholder="Message"></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-main">
+                                    Send Message
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="hours-box">
+
+                    <h4>Working Hours</h4>
+
+                    <hr>
+
+                    <p>Monday - Friday</p>
+                    <strong>9:00 AM - 9:00 PM</strong>
+
+                    <hr>
+
+                    <p>Saturday</p>
+                    <strong>9:00 AM - 10:00 PM</strong>
+
+                    <hr>
+
+                    <p>Sunday</p>
+                    <strong>Closed</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}

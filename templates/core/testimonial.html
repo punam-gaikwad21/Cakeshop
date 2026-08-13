@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Testimonials | Cake Shop{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+<section class="testimonial-hero py-5">
+    <div class="container text-center">
+        <h1>Our Happy Customers</h1>
+        <p>What our customers say about our cakes</p>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonial-page py-5">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <img src="{% static 'images/img1.jpg' %}" alt="">
+                    <h4>Rahul Patil</h4>
+                    <small>Pune</small>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Amazing cake! Fresh taste, beautiful design and
+                        excellent delivery service.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <img src="{% static 'images/img2.jpg' %}" alt="">
+                    <h4>Priya Sharma</h4>
+                    <small>Mumbai</small>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Best bakery I've ever visited.
+                        Highly recommended for birthdays.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <img src="{% static 'images/img1.jpg' %}" alt="">
+                    <h4>Amit Joshi</h4>
+                    <small>Kolhapur</small>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Premium quality cakes at affordable prices.
+                        Excellent customer service.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <img src="{% static 'images/img2.jpg' %}" alt="">
+                    <h4>Sneha Patil</h4>
+                    <small>Satara</small>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Delicious cakes with beautiful decoration.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <img src="{% static 'images/img1.jpg' %}" alt="">
+                    <h4>Rohit Desai</h4>
+                    <small>Sangli</small>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Fast delivery and awesome taste.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <img src="{% static 'images/img2.jpg' %}" alt="">
+                    <h4>Pooja Kulkarni</h4>
+                    <small>Kolhapur</small>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Every celebration becomes special with Cake Shop.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

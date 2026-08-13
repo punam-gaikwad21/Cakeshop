@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Order Details{% endblock %}
+
+{% block content %}
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="card shadow border-0 rounded-4">
+
+            <div class="card-body">
+
+                <div class="d-flex justify-content-between mb-4">
+
+                    <div>
+
+                        <h3 id="orderNumber"></h3>
+
+                        <p class="text-muted mb-0">
+                            Date :
+                            <span id="orderDate"></span>
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <span
+                            class="badge bg-warning"
+                            id="paymentStatus">
+                        </span>
+
+                        <span
+                            class="badge bg-primary"
+                            id="orderStatus">
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="table-responsive">
+
+                    <table class="table align-middle">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Cake</th>
+
+                                <th>Qty</th>
+
+                                <th>Price</th>
+
+                                <th>Subtotal</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="orderItems">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="text-end">
+
+                    <h4>
+
+                        Total :
+
+                        ₹<span id="grandTotal"></span>
+
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="{% static 'js/uorder_details.js' %}"></script>
+
+{% endblock %}

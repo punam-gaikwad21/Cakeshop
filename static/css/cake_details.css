@@ -1,0 +1,26 @@
+.cake-details{
+    background:#FFF8F0;
+}
+
+.cake-image-box{
+    background:#fff;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.cake-image-box img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.text-main{
+    color:#D2691E;
+    font-weight:700;
+}
+
+#cakeDescription{
+    color:#666;
+    line-height:1.8;
+}

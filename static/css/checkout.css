@@ -1,0 +1,48 @@
+.checkout-section{
+    background:#FFF8F0;
+    min-height:80vh;
+}
+
+.checkout-card,
+.summary-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.summary-card{
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+.checkout-card label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.form-control,
+.form-select{
+
+    height:50px;
+
+    border-radius:10px;
+
+}
+
+textarea.form-control{
+
+    height:auto;
+
+}

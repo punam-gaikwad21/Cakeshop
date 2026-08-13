@@ -1,0 +1,153 @@
+/* ==========================
+ABOUT HERO
+========================== */
+
+.about-hero{
+    background:#FFF8F0;
+    padding:90px 0;
+}
+
+.about-hero h1{
+    font-size:55px;
+    color:#3E2723;
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+}
+
+.about-hero p{
+    color:#666;
+    font-size:18px;
+}
+
+/* ==========================
+ABOUT SECTION
+========================== */
+
+.about-section{
+    background:#fff;
+}
+
+.about-section img{
+    border-radius:20px;
+}
+
+.about-section h2{
+    color:#3E2723;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about-section p{
+    color:#666;
+    line-height:1.9;
+}
+
+.btn-main{
+    background:#D2691E;
+    color:#fff;
+    border:none;
+    padding:12px 30px;
+    border-radius:30px;
+}
+
+.btn-main:hover{
+    background:#3E2723;
+    color:#fff;
+}
+
+/* ==========================
+MISSION
+========================== */
+
+.mission-section{
+    background:#FFF8F0;
+}
+
+.mission-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+    height:100%;
+}
+
+.mission-card:hover{
+    background:#D2691E;
+    color:#fff;
+    transform:translateY(-10px);
+}
+
+.mission-card i{
+    font-size:55px;
+    color:#D2691E;
+    margin-bottom:20px;
+}
+
+.mission-card:hover i,
+.mission-card:hover h4,
+.mission-card:hover p{
+    color:#fff;
+}
+
+/* ==========================
+TEAM
+========================== */
+
+.team-section{
+    background:#fff;
+}
+
+.team-card{
+    background:#FFF8F0;
+    border-radius:20px;
+    text-align:center;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.team-card:hover{
+    transform:translateY(-10px);
+}
+
+.team-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.team-card h4{
+    margin-top:20px;
+    color:#3E2723;
+}
+
+.team-card p{
+    color:#666;
+    padding-bottom:20px;
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.about-hero h1{
+    font-size:38px;
+}
+
+.about-section{
+    text-align:center;
+}
+
+.about-section img{
+    margin-bottom:30px;
+}
+
+.team-card img{
+    height:250px;
+}
+
+}

@@ -1,0 +1,140 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold logo"
+           href="{% url 'home' %}">
+            🍰 CakeShop
+        </a>
+
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbar">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="{% url 'home' %}">
+                        Home
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="{% url 'about' %}">
+                        About
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="{% url 'shop' %}">
+                        Shop
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="{% url 'testimonial' %}">
+                        Testimonials
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="{% url 'why' %}">
+                        Why Us
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="{% url 'contact' %}">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Right Side -->
+            <div class="d-flex align-items-center gap-3">
+
+
+                <!-- Guest Menu -->
+                <div id="guestMenu">
+
+                    <a href="/login/"
+                       class="btn btn-outline-dark">
+                        Login
+                    </a>
+
+                    <a href="/register/"
+                       class="btn btn-main">
+                        Register
+                    </a>
+
+                </div>
+
+
+                <!-- User Menu -->
+                <div id="userMenu"
+                     style="display: none;">
+
+                    <ul class="navbar-nav align-items-center">
+
+
+                        <!-- My Orders -->
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="/my-orders/">
+                                My Orders
+                            </a>
+
+                        </li>
+
+
+                        <!-- Logout -->
+                        <li class="nav-item">
+
+                            <button
+                                type="button"
+                                class="nav-link border-0 bg-transparent"
+                                onclick="logout()">
+
+                                Logout
+
+                            </button>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>

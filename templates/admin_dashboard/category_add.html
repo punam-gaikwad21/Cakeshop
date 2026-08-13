@@ -1,0 +1,57 @@
+{% extends "admin_dashboard/admin_base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <div class="card shadow-sm border-0">
+
+        <div class="card-header">
+
+            <h3>Add Category</h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <form id="categoryForm">
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Category Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter Category Name"
+                        required>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-main">
+
+                    Save Category
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+
+<script src="{% static 'js/category_add.js' %}"></script>
+
+{% endblock %}

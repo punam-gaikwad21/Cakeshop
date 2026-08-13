@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Shop | Cake Shop{% endblock %}
+
+{% block content %}
+
+<!-- ==========================
+        SHOP BANNER
+========================== -->
+
+<section class="shop-banner py-5">
+
+    <div class="container text-center">
+
+        <h1 class="shop-title">
+            Our Cakes
+        </h1>
+
+        <p class="shop-subtitle">
+            Freshly Baked Cakes For Every Celebration
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+        SHOP SECTION
+========================== -->
+
+<section class="shop-section py-5">
+
+    <div class="container">
+
+        <!-- Search & Filter -->
+
+        <div class="row mb-4">
+
+            <div class="col-lg-6 mb-3">
+
+                <input
+                    type="text"
+                    id="searchCake"
+                    class="form-control"
+                    placeholder="Search Cakes...">
+
+            </div>
+
+            <div class="col-lg-4 mb-3">
+
+                <select
+                    id="categoryFilter"
+                    class="form-select">
+
+                    <option value="">
+                        All Categories
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- Cake List -->
+
+        <div
+            class="row g-4"
+            id="cakeContainer">
+
+        </div>
+
+        <!-- Pagination -->
+
+        <div
+            class="d-flex justify-content-center mt-5"
+            id="pagination">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script src="{% static 'js/shop.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,98 @@
+/* ==========================
+TESTIMONIAL HERO
+========================== */
+
+.testimonial-hero{
+    background:#FFF8F0;
+    padding:90px 0;
+}
+
+.testimonial-hero h1{
+    font-size:55px;
+    color:#3E2723;
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+}
+
+.testimonial-hero p{
+    color:#666;
+    font-size:18px;
+}
+
+/* ==========================
+TESTIMONIAL PAGE
+========================== */
+
+.testimonial-page{
+    background:#ffffff;
+}
+
+.testimonial-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+    height:100%;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+    background:#D2691E;
+}
+
+.testimonial-card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #D2691E;
+    margin-bottom:20px;
+}
+
+.testimonial-card h4{
+    color:#3E2723;
+    margin-bottom:5px;
+}
+
+.testimonial-card small{
+    color:#777;
+}
+
+.stars{
+    color:#FFC107;
+    font-size:18px;
+    margin:15px 0;
+}
+
+.testimonial-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+.testimonial-card:hover h4,
+.testimonial-card:hover small,
+.testimonial-card:hover p{
+    color:#fff;
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.testimonial-hero{
+    padding:60px 0;
+}
+
+.testimonial-hero h1{
+    font-size:38px;
+}
+
+.testimonial-card{
+    padding:25px;
+}
+
+}

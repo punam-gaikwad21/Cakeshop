@@ -1,0 +1,66 @@
+.auth-section{
+    background:#FFF8F0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.auth-section .card{
+    border-radius:20px;
+}
+
+.auth-section h2{
+    color:#3E2723;
+    font-weight:700;
+}
+
+.auth-section label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.auth-section .form-control{
+    height:50px;
+    border-radius:10px;
+}
+
+.auth-section .btn-main{
+    margin-top:10px;
+}
+
+
+
+
+.auth-section{
+
+    background:#FFF8F0;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.auth-section .card{
+
+    border-radius:20px;
+
+    padding:20px;
+
+}
+
+.auth-section .form-control{
+
+    height:50px;
+
+    border-radius:10px;
+
+}
+
+.auth-section .btn-main{
+
+    margin-top:10px;
+
+}

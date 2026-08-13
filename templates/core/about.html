@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us | Cake Shop{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="about-hero py-5">
+    <div class="container text-center">
+        <h1>About Us</h1>
+        <p>Fresh Cakes Made With Love For Every Celebration</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section py-5">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 mb-4">
+                <img src="{% static 'images/p4.jpg' %}" class="img-fluid rounded-4 shadow" alt="About Cake Shop">
+            </div>
+
+            <div class="col-lg-6">
+
+                <h2>Welcome To Cake Shop</h2>
+
+                <p>
+                    Cake Shop is dedicated to making every celebration
+                    memorable with freshly baked, handcrafted cakes.
+                    We use premium ingredients, creative designs and
+                    exceptional customer service.
+                </p>
+
+                <p>
+                    Whether it's a birthday, wedding, anniversary or
+                    any special occasion, our cakes are baked with love
+                    and passion to bring happiness to your family.
+                </p>
+
+                <a href="#" class="btn btn-main mt-3">
+                    Explore Cakes
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Our Mission -->
+<section class="mission-section py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2>Our Mission</h2>
+            <p>Making Every Celebration Sweeter</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+                <div class="mission-card">
+                    <i class="bi bi-heart-fill"></i>
+                    <h4>Made With Love</h4>
+                    <p>Every cake is handcrafted with care and passion.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="mission-card">
+                    <i class="bi bi-award-fill"></i>
+                    <h4>Premium Quality</h4>
+                    <p>We use only fresh and high-quality ingredients.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="mission-card">
+                    <i class="bi bi-truck"></i>
+                    <h4>Fast Delivery</h4>
+                    <p>Safe and timely delivery for every order.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock %}
